@@ -23,6 +23,7 @@ public class StudentController {
  
     @GetMapping("/")
     public String viewHomePage(Model model) {
+    	
         List<Student> liststudent = service.listAll();
         model.addAttribute("liststudent", liststudent);
         System.out.print("Get / ");
